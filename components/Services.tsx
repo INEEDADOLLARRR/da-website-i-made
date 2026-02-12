@@ -1,31 +1,32 @@
 import React from 'react';
 import { Reveal, StaggerContainer, StaggerItem } from './ui/Reveal';
 import { Home, Hammer, CloudLightning, Layers, ArrowUpRight } from 'lucide-react';
+import { Button } from './ui/Button';
 
 const services = [
   {
-    icon: <Home className="w-6 h-6" />,
-    title: "Lifetime Replacement",
-    description: "Architectural shingle and luxury metal installations engineered for Austin's unique climate and storms.",
-    tags: ["GAF MasterElite", "Luxury Metal", "Lifetime Warranty"]
-  },
-  {
-    icon: <Hammer className="w-6 h-6" />,
-    title: "Precision Repair",
-    description: "Expert leak detection and rapid structural repairs to stop damage before it compromises your home.",
-    tags: ["24-Hour Tarping", "Leak Detection", "Shingle Repair"]
+    icon: <ArrowUpRight className="w-6 h-6" />,
+    title: "Double Your Leads",
+    description: "Stop relying on shared leads like Angi. We build systems that generate exclusive, high-quality appointments directly to your phone.",
+    tags: ["SEO Optimized", "Lead Capture", "Google Maps"]
   },
   {
     icon: <CloudLightning className="w-6 h-6" />,
-    title: "Storm Restoration",
-    description: "Direct insurance coordination and comprehensive restoration after hail, wind, or fire damage.",
-    tags: ["Hail Specialists", "Claims Liaison", "Fast Recovery"]
+    title: "Convert More Visitors",
+    description: "Most roofer websites leak money. We implement high-converting quote forms, click-to-call buttons, and trust signals.",
+    tags: ["Quote Forms", "Click-to-Call", "Fast Loading"]
+  },
+  {
+    icon: <Home className="w-6 h-6" />,
+    title: "Own Your Local Market",
+    description: "Dominate search results for 'roofer near me' with city-specific landing pages and schema markup that Google loves.",
+    tags: ["City Pages", "Local SEO", "Schema Markup"]
   },
   {
     icon: <Layers className="w-6 h-6" />,
-    title: "Gutters & Exterior",
-    description: "Seamless gutter systems and premium siding solutions that redirect water and enhance curb appeal.",
-    tags: ["Seamless Systems", "Leaf Protection", "Vinyl & Fiber"]
+    title: "Look Like a $10M Company",
+    description: "First impressions matter. We design premium, mobile-first websites that position you as the authority in your area.",
+    tags: ["Premium Design", "Project Gallery", "Brand Authority"]
   }
 ];
 
@@ -36,10 +37,10 @@ export const Services = () => {
         <div className="text-center mb-20 max-w-3xl mx-auto">
           <Reveal>
             <h2 className="text-4xl md:text-6xl font-black tracking-tight mb-6">
-              Engineering Your <br /><span className="text-zinc-400">First Line of Defense.</span>
+              Everything Your Roofing Business <br /><span className="text-zinc-400">Needs to Dominate Online.</span>
             </h2>
             <p className="text-xl text-secondary font-normal">
-              We don't just sit on roofs; we provide the ultimate peace of mind through master-level architecture and installation.
+              We don't just build pretty websites. We build 24/7 sales machines that fill your calendar with inspections.
             </p>
           </Reveal>
         </div>
@@ -62,11 +63,21 @@ export const Services = () => {
                     </span>
                   ))}
                 </div>
-                <ArrowUpRight className="absolute top-8 right-8 w-5 h-5 text-zinc-300 group-hover:text-accent group-hover:translate-x-1 group-hover:-translate-y-1 transition-all" />
+                <div className="absolute top-8 right-8 text-zinc-300 group-hover:text-accent group-hover:translate-x-1 group-hover:-translate-y-1 transition-all">
+                  →
+                </div>
               </div>
             </StaggerItem>
           ))}
         </StaggerContainer>
+
+        <Reveal delay={0.4}>
+          <div className="mt-16 text-center">
+            <Button onClick={() => document.getElementById('materials')?.scrollIntoView({ behavior: 'smooth' })} variant="secondary" className="px-8">
+              See Demo Websites
+            </Button>
+          </div>
+        </Reveal>
       </div>
     </section>
   );

@@ -13,37 +13,37 @@ export const TrustBar = () => {
             <div className="flex gap-12 items-center border-r border-zinc-200 pr-12 hidden md:flex">
               <div className="text-center">
                 <div className="flex items-center justify-center gap-1 font-black text-2xl text-primary">
-                  5.0 <Star className="w-5 h-5 fill-yellow-400 text-yellow-400" />
+                  150+
                 </div>
-                <div className="text-[10px] font-bold text-secondary uppercase tracking-[0.2em] mt-1">Google Reviews</div>
+                <div className="text-[10px] font-bold text-secondary uppercase tracking-[0.2em] mt-1">Sites Built</div>
               </div>
               <div className="text-center">
-                <div className="font-black text-2xl text-primary tracking-tighter">1.2k+</div>
-                <div className="text-[10px] font-bold text-secondary uppercase tracking-[0.2em] mt-1">Projects Done</div>
+                <div className="font-black text-2xl text-primary tracking-tighter text-green-600">+47%</div>
+                <div className="text-[10px] font-bold text-secondary uppercase tracking-[0.2em] mt-1">Avg. Lead Increase</div>
               </div>
             </div>
 
             {/* Certifications & Partners */}
             <div className="flex flex-wrap justify-center items-center gap-10 md:gap-16 opacity-70 grayscale hover:grayscale-0 transition-all duration-700">
               <div className="flex flex-col items-center">
-                <span className="font-black text-2xl tracking-tighter text-zinc-800 italic">GAF</span>
-                <span className="text-[9px] font-extrabold bg-primary text-white px-2 py-0.5 rounded-sm uppercase tracking-tighter -mt-1">Master Elite®</span>
+                <span className="font-black text-2xl tracking-tighter text-zinc-800 italic">Google</span>
+                <span className="text-[9px] font-extrabold bg-blue-600 text-white px-2 py-0.5 rounded-sm uppercase tracking-tighter -mt-1">Partner</span>
               </div>
               <div className="flex flex-col items-center">
                 <div className="flex items-center">
-                  <span className="font-black text-xl italic text-red-600">Owens</span>
-                  <span className="font-black text-xl italic text-zinc-900 ml-1">Corning</span>
+                  <span className="font-black text-xl italic text-orange-500">SEM</span>
+                  <span className="font-black text-xl italic text-zinc-900 ml-1">rush</span>
                 </div>
-                <span className="text-[9px] font-bold text-secondary uppercase tracking-widest mt-1">Platinum® Partner</span>
+                <span className="text-[9px] font-bold text-secondary uppercase tracking-widest mt-1">Agency Partner</span>
               </div>
               <div className="hidden sm:flex items-center gap-2">
                 <ShieldCheck className="w-6 h-6 text-blue-900" />
-                <span className="font-serif font-bold text-xl text-blue-900">CertainTeed</span>
+                <span className="font-serif font-bold text-xl text-blue-900">Cloudflare</span>
               </div>
               <div className="flex items-center gap-2 border-2 border-zinc-900 px-3 py-1">
-                <span className="font-black text-xl italic tracking-tighter">BBB</span>
+                <span className="font-black text-xl italic tracking-tighter">SEO</span>
                 <div className="w-[1px] h-6 bg-zinc-900 mx-1"></div>
-                <span className="text-[10px] font-black uppercase text-zinc-900 leading-none">Accredited<br />A+ Rating</span>
+                <span className="text-[10px] font-black uppercase text-zinc-900 leading-none">Certified<br />Expert</span>
               </div>
             </div>
 
@@ -54,7 +54,7 @@ export const TrustBar = () => {
               <div className="w-1 h-1 bg-accent/30 rounded-full" />
               <div className="flex items-center gap-1">
                 <CheckCircle2 className="w-4 h-4" />
-                Local Family Owned
+                Roofing Specialists
               </div>
             </div>
 

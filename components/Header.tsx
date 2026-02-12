@@ -30,26 +30,28 @@ export const Header = () => {
       <div className="container mx-auto px-4 max-w-7xl flex items-center justify-between">
         <div className="flex items-center gap-3 cursor-pointer group" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
           <div className="w-10 h-10 bg-primary rounded-xl flex items-center justify-center transform transition-transform group-hover:rotate-6 shadow-lg shadow-primary/10">
+            {/* Laptop Icon for Web Design Agency */}
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12 2L2 12H5V22H19V12H22L12 2Z" fill="white" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+              <path d="M20 16V5C20 4.46957 19.7893 3.96086 19.4142 3.58579C19.0391 3.21071 18.5304 3 18 3H6C5.46957 3 4.96086 3.21071 4.58579 3.58579C4.21071 3.96086 4 4.46957 4 5V16M2 20H22M12 17H12.01" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </div>
           <div className="flex flex-col">
-            <span className="font-black text-2xl tracking-tighter text-primary leading-none">APEX</span>
-            <span className="text-[10px] font-bold tracking-[0.3em] text-accent uppercase leading-none mt-1">Roofing Systems</span>
+            <span className="font-black text-2xl tracking-tighter text-primary leading-none">RoofPro</span>
+            <span className="text-[10px] font-bold tracking-[0.3em] text-accent uppercase leading-none mt-1">Sites</span>
           </div>
         </div>
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center gap-10">
-          <button onClick={() => scrollTo('services')} className="text-sm font-bold text-secondary hover:text-primary transition-colors tracking-tight">Expertise</button>
-          <button onClick={() => scrollTo('contact')} className="text-sm font-bold text-secondary hover:text-primary transition-colors tracking-tight">Restoration</button>
+          <button onClick={() => scrollTo('services')} className="text-sm font-bold text-secondary hover:text-primary transition-colors tracking-tight">Services</button>
+          <button onClick={() => scrollTo('process')} className="text-sm font-bold text-secondary hover:text-primary transition-colors tracking-tight">How It Works</button>
+          <button onClick={() => scrollTo('results')} className="text-sm font-bold text-secondary hover:text-primary transition-colors tracking-tight">Results</button>
           <div className="h-4 w-[1px] bg-zinc-200"></div>
           <a href="tel:+15125550199" className="flex items-center gap-2 text-primary hover:text-accent transition-colors">
             <PhoneCall className="w-4 h-4" />
             <span className="font-bold text-sm">(512) 555-0199</span>
           </a>
-          <Button onClick={() => scrollTo('contact')} className="px-6 py-2.5 text-sm shadow-xl shadow-accent/20">Free Assessment</Button>
+          <Button onClick={() => scrollTo('contact')} className="px-6 py-2.5 text-sm shadow-xl shadow-accent/20">Book Strategy Call</Button>
         </nav>
 
         {/* Mobile Toggle */}
@@ -68,13 +70,14 @@ export const Header = () => {
             className="absolute top-full left-0 right-0 bg-white border-b border-zinc-100 overflow-hidden md:hidden shadow-2xl"
           >
             <nav className="flex flex-col p-6 gap-6">
-              <button onClick={() => scrollTo('services')} className="text-left text-lg font-bold text-primary">Our Expertise</button>
-              <button onClick={() => scrollTo('contact')} className="text-left text-lg font-bold text-primary">Roof Restoration</button>
+              <button onClick={() => scrollTo('services')} className="text-left text-lg font-bold text-primary">Services</button>
+              <button onClick={() => scrollTo('process')} className="text-left text-lg font-bold text-primary">How It Works</button>
+              <button onClick={() => scrollTo('results')} className="text-left text-lg font-bold text-primary">Results</button>
               <a href="tel:+15125550199" className="flex items-center gap-3 text-accent font-bold text-lg">
                 <PhoneCall className="w-5 h-5" />
                 (512) 555-0199
               </a>
-              <Button onClick={() => scrollTo('contact')} fullWidth className="py-4 text-lg">Schedule Estimate</Button>
+              <Button onClick={() => scrollTo('contact')} fullWidth className="py-4 text-lg">Book Strategy Call</Button>
             </nav>
           </motion.div>
         )}

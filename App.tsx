@@ -3,8 +3,9 @@ import { Header } from './components/Header';
 import { Hero } from './components/Hero';
 import { TrustBar } from './components/TrustBar';
 import { Services } from './components/Services';
+import { ValueProp } from './components/ValueProp';
 import { Process } from './components/Process';
-import { Materials } from './components/Features'; // Renamed logically in UI but kept filename
+import { Materials as Features } from './components/Features';
 import { Testimonials } from './components/Testimonials';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
@@ -20,8 +21,9 @@ function App() {
         <Hero />
         <TrustBar />
         <Services />
+        <ValueProp />
         <Process />
-        <Materials />
+        <Features />
         <Testimonials />
         <Contact />
       </main>

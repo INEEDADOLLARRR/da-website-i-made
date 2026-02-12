@@ -7,35 +7,35 @@ import { cn } from '../utils';
 const materials = [
   {
     id: 1,
-    title: "Asphalt Shingles",
-    subtitle: "The Versatile Classic",
-    description: "Cost-effective durability with a wide range of colors. Our architectural shingles offer depth and superior weather resistance.",
-    image: "https://images.unsplash.com/photo-1628135899732-c11578e06380?auto=format&fit=crop&q=80&w=1600",
-    features: ["Most Popular Choice", "25-50 Year Lifespan", "Class A Fire Rating"]
+    title: "SEO-Optimized Pages",
+    subtitle: "Dominate Local Search",
+    description: "We create specific landing pages for every city you serve and every service you offer (Repair, Replacement, Gutter). This is the secret to ranking #1 for 'roofer in [city]'.",
+    image: "https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?auto=format&fit=crop&q=80&w=1600",
+    features: ["City-Specific Pages", "Keyword Rich Content", "Google Maps Integration"]
   },
   {
     id: 2,
-    title: "Metal Roofing",
-    subtitle: "Modern Longevity",
-    description: "Standing seam metal roofs provide a sleek, contemporary look with unmatched durability against wind, hail, and fire.",
-    image: "https://images.unsplash.com/photo-1621255557766-c958619bc306?auto=format&fit=crop&q=80&w=1600",
-    features: ["70+ Year Lifespan", "Energy Efficient", "Recyclable Material"]
+    title: "Lead Capture System",
+    subtitle: "Automated Lead Gen",
+    description: "Never miss a lead. Our websites come with high-converting quote forms, CRM integration, and instant lead notifications sent directly to your phone/email.",
+    image: "https://images.unsplash.com/photo-1556155092-490a1ba16284?auto=format&fit=crop&q=80&w=1600",
+    features: ["Instant Notifications", "CRM Connection", "Spam Protection"]
   },
   {
     id: 3,
-    title: "Tile & Slate",
-    subtitle: "Timeless Elegance",
-    description: "For the discerning homeowner. Clay tile and natural slate offer distinct beauty and old-world charm that lasts a century.",
-    image: "https://images.unsplash.com/photo-1596253457597-2a6c38290327?auto=format&fit=crop&q=80&w=1600",
-    features: ["Premium Aesthetic", "Natural Insulation", "Century Durability"]
+    title: "Mobile-First Design",
+    subtitle: "Perfect on Phones",
+    description: "70% of homeowners search for roofers on their phones. We design mobile-first to ensure your site is fast, easy to use, and has one-click calling.",
+    image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&q=80&w=1600",
+    features: ["Fast Loading Speed", "Click-to-Call Sticky", "Thumb-Friendly"]
   },
   {
     id: 4,
-    title: "Flat Roofing",
-    subtitle: "TPO & PVC Systems",
-    description: "Advanced membrane solutions for modern flat-roof structures, ensuring watertight integrity and heat reflection.",
-    image: "https://images.unsplash.com/photo-1621255557833-255d65457223?auto=format&fit=crop&q=80&w=1600",
-    features: ["UV Resistant", "Waterproof Seal", "Low Maintenance"]
+    title: "Ongoing Support",
+    subtitle: "We've Got Your Back",
+    description: "We don't just launch and leave. We handle hosting, security updates, image changes, and monthly SEO reporting so you can focus on roofing.",
+    image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=1600",
+    features: ["Hosting Included", "Security Updates", "Monthly Reports"]
   }
 ];
 
@@ -76,7 +76,7 @@ export const Materials = () => {
                     alt={item.title}
                     className="w-full h-full object-cover"
                   />
-                  <div className="absolute inset-0 bg-black/20" />
+                  <div className="absolute inset-0 bg-black/40" />
                   <div className="absolute bottom-8 left-8">
                     <h4 className="text-white text-3xl font-bold">{item.title}</h4>
                   </div>
@@ -89,12 +89,12 @@ export const Materials = () => {
           <div className="w-full lg:w-1/2 py-24 lg:py-0">
             <div className="mb-24 lg:h-[40vh] flex flex-col justify-center">
               <Reveal>
-                <span className="text-blue-600 font-bold tracking-wider uppercase text-sm mb-2 block">Material Selection</span>
+                <span className="text-blue-600 font-bold tracking-wider uppercase text-sm mb-2 block">What's Included</span>
                 <h2 className="text-5xl md:text-6xl font-semibold tracking-tighter mb-6">
                   Curated <br /> <span className="text-zinc-400">Excellence.</span>
                 </h2>
                 <p className="text-xl text-secondary">
-                  We only install materials from manufacturers we trust on our own homes.
+                  Every website we build is engineered for one purpose: to get you more booked jobs.
                 </p>
               </Reveal>
             </div>

@@ -5,31 +5,31 @@ import { Star, ArrowRight } from 'lucide-react';
 
 const testimonials = [
   {
-    name: "The Harrison Residence",
-    location: "Portland, OR",
-    quote: "Absolutely transformed the look of our home. The team was surgical in their precision.",
-    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=1200",
+    name: "Summit Exteriors",
+    location: "Denver, CO",
+    quote: "Our lead volume tripled in the first 90 days. The best investment we've ever made.",
+    image: "https://images.unsplash.com/photo-1542596594-649edbc13630?auto=format&fit=crop&q=80&w=1200",
     rating: 5
   },
   {
-    name: "Modern Farmhouse",
+    name: "ProShield Roofing",
     location: "Austin, TX",
-    quote: "Cleanest job site I've ever seen. The metal standing seam roof is flawless.",
-    image: "https://images.unsplash.com/photo-1583608205776-bfd35f0d9f8e?auto=format&fit=crop&q=80&w=1200",
+    quote: "We are finally ranking #1 for 'roofer near me' in our city. The ROI is undeniable.",
+    image: "https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&q=80&w=1200",
     rating: 5
   },
   {
-    name: "Mid-Century Reno",
-    location: "Seattle, WA",
-    quote: "Apex handled the complex roof lines of our mid-century home with ease.",
-    image: "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&q=80&w=1200",
+    name: "Elite Roofing & Solar",
+    location: "Orlando, FL",
+    quote: "RoofPro Sites handles everything. I just answer the phone and book jobs.",
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=1200",
     rating: 5
   },
   {
-    name: "Coastal Villa",
-    location: "San Diego, CA",
-    quote: "We needed corrosion resistant materials. Apex delivered a solution that looks incredible.",
-    image: "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&q=80&w=1200",
+    name: "Titan Contractors",
+    location: "Phoenix, AZ",
+    quote: "The site looks professionally built, not like a cheap template. It elevates our brand.",
+    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=1200",
     rating: 5
   }
 ];
