@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #FAFAFA;
+  --color-surface: #FFFFFF;
+
+  /* Primary */
+  --color-primary: #0f172a;
+  --color-primary-light: #334155;
+
+  /* Secondary */
+  --color-secondary: #64748b;
+
+  /* Accent */
+  --color-accent: #0ea5e9;
+  --color-accent-dark: #0284c7;
+
+  /* Font */
+  --font-sans: Inter, sans-serif;
+
+  /* Animations */
+  --animate-blob: blob 7s infinite;
+  --animate-shimmer: shimmer 2s linear infinite;
+
+  @keyframes blob {
+    0% {
+      transform: translate(0px, 0px) scale(1);
+    }
+
+    33% {
+      transform: translate(30px, -50px) scale(1.1);
+    }
+
+    66% {
+      transform: translate(-20px, 20px) scale(0.9);
+    }
+
+    100% {
+      transform: translate(0px, 0px) scale(1);
+    }
+  }
+
+  @keyframes shimmer {
+    from {
+      background-position: 0 0;
+    }
+
+    to {
+      background-position: -200% 0;
+    }
+  }
+}
+
+@layer base {
+  body {
+    /* v4 uses the values directly now, no need for @apply in this specific way usually, but let's keep it standard */
+    @apply bg-background text-primary selection:bg-accent/10 selection:text-accent font-sans;
+    overflow-x: hidden;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-white/70 backdrop-blur-md border border-white/20 shadow-xl;
+  }
+}
